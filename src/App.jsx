@@ -55,7 +55,7 @@ function App() {
 			origin,
 			destination: "Barcelona, Spain",
 		};
-		setRecentSearches([...recentSearches, newItem]);
+		setRecentSearches([newItem, ...recentSearches]);
 		setShowAddToList(false);
 		setSearch("");
 	};
